@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Andhra Delight — Menu & Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🌶️ Motilo</div>
+      <div class="tag">Authentic Andhra Flavours</div>
+    </div>
+    <div class="qr-area">
+      <img id="qr" alt="QR code to this menu" />
+      <button id="copyLink" class="btn small">Copy Link</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Menu (left) -->
+    <section class="menu" id="menu">
+      <h2>Menu</h2>
+      <p class="intro">Tap any dish to view details and add to your order.</p>
+
+      <!-- 🌶️ Starters -->
+      <div class="category">
+        <h3>🌶️ Starters</h3>
+        <div class="items">
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSc0jUAGDTGwGnO7lZYW2Z1JfHEZwEzxL34A&s" 
+            alt="Delicious Food" 
+            width="600" 
+            height="400" 
+            style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+
+            <div class="meta"><div class="name">Guntur Chicken Fry</div><div class="price">₹240</div></div>
+          </div>
+          <div class="item">
+            <img src="https://vivahabhojanambu.co.in/wp-content/uploads/2021/02/Rajahmundry-Royyala-Vepudu-2.jpg" alt="Royyala Vepudu">
+            <div class="meta"><div class="name">Royyala Vepudu</div><div class="price">₹320</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd_NRywTEvQPL1Bbcqg8hocx0RvBykcsGdig&s" alt="Kodi Vepudu">
+            <div class="meta"><div class="name">Kodi Vepudu</div><div class="price">₹230</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_79DyJ-sCYsJ0kl3HIQWgl1QMDsDVS5rVBg&s" alt="Mirapakaya Bajji">
+            <div class="meta"><div class="name">Mirapakaya Bajji</div><div class="price">₹120</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7fSIaePGYPGW3-8YMjDyOtFjNOZoz5xIOg&s" alt="Punugulu">
+            <div class="meta"><div class="name">Punugulu</div><div class="price">₹100</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍲 Main Course -->
+      <div class="category">
+        <h3>🍲 Main Course</h3>
+        <div class="items">
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcXVaujM6cHBVxD-RfKSX0_DBZApJugtdAN18Y1XVZ2G-Cq9K0LjZuk9TLtOgPA4RqS0&usqp=CAU" alt="Andhra Chicken Curry">
+            <div class="meta"><div class="name">Andhra Chicken Curry</div><div class="price">₹260</div></div>
+          </div>
+          <div class="item">
+            <img src="https://img.freepik.com/premium-photo/andhra-pradesh-gongura-mutton-tangy-leafy-curry_960396-1016669.jpg?w=360" alt="Gongura Mutton Curry">
+            <div class="meta"><div class="name">Gongura Mutton Curry</div><div class="price">₹320</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhnc78jf5K3w5hGIXPdgu2vd-c_B1xQ68yQ&s" alt="Royyala Iguru">
+            <div class="meta"><div class="name">Royyala Iguru</div><div class="price">₹350</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq8M9v4HAnhV6Wg7XerBqaMnj-8PS9e_B06Q&s" alt="Gutti Vankaya Curry">
+            <div class="meta"><div class="name">Gutti Vankaya Curry</div><div class="price">₹200</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1wsP5JYyKXx1rkRFrgN6lWts-AMAYDu2FQ&s" alt="Pappu (Dal)">
+            <div class="meta"><div class="name">Pappu (Dal)</div><div class="price">₹160</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍚 Rice & Biryanis -->
+      <div class="category">
+        <h3>🍚 Rice & Biryanis</h3>
+        <div class="items">
+          <div class="item">
+            <img src="https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4=" alt="Andhra Chicken Biryani">
+            <div class="meta"><div class="name">Andhra Chicken Biryani</div><div class="price">₹280</div></div>
+          </div>
+          <div class="item">
+            <img src="https://media.istockphoto.com/id/980037112/photo/gosht-or-lamb-biryani-prepared-in-basmati-rice-served-with-yogurt-dip-in-terracotta-bowl.jpg?s=612x612&w=0&k=20&c=LY0r5y0tij9MHz2tg802UQGHk-VPUNUYj6x6qGm2bsU=" alt="Mutton Biryani">
+            <div class="meta"><div class="name">Mutton Biryani</div><div class="price">₹320</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3HHw5Q-fZv52oTxWacSNfFFnxwhHfweb6TQ&s" alt="Veg Biryani">
+            <div class="meta"><div class="name">Veg Biryani</div><div class="price">₹220</div></div>
+          </div>
+          <div class="item">
+            <img src="https://i.ytimg.com/vi/l0oYsZHyzhA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAagHpn9LJTj6OpRioxRLqz3B899g" alt="Curd Rice">
+            <div class="meta"><div class="name">Curd Rice</div><div class="price">₹120</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDsWzRFTyzxpOIFnEQHui9Uko1YZPLrm5fkg&s" alt="Pulihora (Tamarind Rice)">
+            <div class="meta"><div class="name">Pulihora (Tamarind Rice)</div><div class="price">₹100</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍢 Side Dishes -->
+      <div class="category">
+        <h3>🍢 Side Dishes</h3>
+        <div class="items">
+          <div class="item">
+            <img src="https://images.jdmagicbox.com/quickquotes/listicle/listicle_1712308372973_d6qhr_1000x473.jpg" alt="Rasam">
+            <div class="meta"><div class="name">Rasam</div><div class="price">₹80</div></div>
+          </div>
+          <div class="item">
+            <img src="https://vismaifood.com/storage/app/uploads/public/06c/a03/a8b/thumb__700_0_0_0_auto.jpg" alt="Sambar">
+            <div class="meta"><div class="name">Sambar</div><div class="price">₹100</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIjv2Y9pyRYsvpuwQI4DTQ3Qc4YfqGpzXYQ&s" alt="Appadam (Papad)">
+            <div class="meta"><div class="name">Appadam (Papad)</div><div class="price">₹40</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDBFSwZ08p_t3NV8bujAvpdR-_AQmErFJ6w&s" alt="Pickles (Avakaya)">
+            <div class="meta"><div class="name">Pickles (Avakaya)</div><div class="price">₹60</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍮 Desserts & Beverages -->
+      <div class="category">
+        <h3>🍮 Desserts & Beverages</h3>
+        <div class="items">
+          <div class="item">
+            <img src="https://t3.ftcdn.net/jpg/00/55/42/36/360_F_55423607_Z2RxYrfgC52y0i2hXbuLROUVuX49xwBM.jpg" alt="Payasam">
+            <div class="meta"><div class="name">Payasam</div><div class="price">₹120</div></div>
+          </div>
+          <div class="item">
+            <img src="https://www.shutterstock.com/image-photo/puran-poli-known-holige-indian-600nw-781347769.jpg" alt="Bobbatlu (Puran Poli)">
+            <div class="meta"><div class="name">Bobbatlu (Puran Poli)</div><div class="price">₹100</div></div>
+          </div>
+          <div class="item">
+            <img src="https://media.istockphoto.com/id/1147733808/photo/spiced-buttermilk-indian-traditional-summer-drink.jpg?s=612x612&w=0&k=20&c=oDdoklsqPdPjTnMnWkPeGFRHacXNzFcKtgkcig9r300=" alt="Buttermilk">
+            <div class="meta"><div class="name">Buttermilk</div><div class="price">₹60</div></div>
+          </div>
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP1j932MPIEVgXkH0uvDFfjzR185rfC4zWIolJaDg9_tEL4_7fh0VpXnDONsNoby61GS0&usqp=CAU" alt="Filter Coffee">
+            <div class="meta"><div class="name">Filter Coffee</div><div class="price">₹80</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart (right) -->
+    <aside class="cart" id="cart">
+      <h3>Your Order</h3>
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+        <div class="row"><span>GST (5%)</span><span id="tax">₹0</span></div>
+        <div class="row total"><span>Total</span><span id="total">₹0</span></div>
+      </div>
+
+      <div class="customer">
+        <label for="customer-name">Name</label>
+        <input id="customer-name" placeholder="Your name" type="text">
+
+        <label for="customer-phone">Phone</label>
+        <input id="customer-phone" placeholder="Phone number" type="tel">
+
+        <label for="customer-note">Note (optional)</label>
+        <textarea id="customer-note" placeholder="Any special requests..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="clearCart" class="btn ghost">Clear</button>
+        <button id="submitOrder" class="btn primary">Submit Order (Email)</button>
+      </div>
+
+      <p class="small">Orders will be emailed to <strong>ramnagendrapkodanda@gmail.com</strong> (opens your email client).</p>
+    </aside>
+  </main>
+
+  <!-- Dish detail modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="modalClose">✕</button>
+      <img id="modalImg" alt="" />
+      <div class="modal-body">
+        <h4 id="modalName"></h4>
+        <p id="modalDesc"></p>
+        <div class="price-row">
+          <div class="price" id="modalPrice"></div>
+          <button id="addToCart" class="btn primary">Add to Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

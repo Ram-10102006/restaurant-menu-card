@@ -1,0 +1,259 @@
+/* 🌶️ Andhra Delight - Premium Food Ordering UI */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: gold;
+}
+
+.tag {
+  font-size: 0.9rem;
+  color: #bbdefb;
+}
+
+.qr-area img {
+  width: 80px;
+  height: 80px;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.menu {
+  flex: 2;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffeb3b;
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h3 {
+  margin-bottom: 0.8rem;
+  border-left: 4px solid gold;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.item {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.meta {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: gold;
+  font-weight: 600;
+}
+
+.cart {
+  flex: 1;
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart h3 {
+  text-align: center;
+  color: #ffeb3b;
+  margin-bottom: 1rem;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.cart-item button {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cart-summary {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+}
+
+.total {
+  font-weight: 700;
+  color: #00e676;
+}
+
+.customer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.customer input, .customer textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.btn {
+  background: gold;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ffd740;
+}
+
+.btn.ghost {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn.primary {
+  background: #00e676;
+}
+
+.small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 90%;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
